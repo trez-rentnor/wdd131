@@ -12,11 +12,14 @@
 
     --heading-font: 'Kanit', sans-serif;
     --paragraph-font: 'Quicksand', sans-serif;
+
     --border-radius: 0.5rem;
+    --max-width: 1000px;
 }
 
 body {
     width: 80%;
+    max-width: var(--max-width);
     margin: auto;
 }
 
@@ -79,6 +82,8 @@ nav a:not(:hover) {
 }
 
 main {
+    max-width: var(--max-width);
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
