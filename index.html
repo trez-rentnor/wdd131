@@ -1,1 +1,65 @@
-Placeholder to create repo
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WDD 131 - Dynamic Web Fundamentals - Randy Jones</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Randy Jones, byu-i, dynamic css, home">
+        <meta name="author" content="Randy Jones">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/base.css">
+    </head>
+    <body>
+        <script src="scripts/getdates.js" async defer></script>
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - Randy Jones</h1>
+            <nav>
+               <a href="https://www.linkedin.com/in/randytjones">LinkedIn</a>
+               <a href="https://byui.instructure.com/">I-Learn</a>
+               <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/josh/24?lang=eng&id=p15#p15">Scripture</a>
+               <a href="">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="introduction">
+                    <img id="profile-img" src="images/profile.webp" alt="Profile picture">
+                    <p>
+                        My name is Randy Jones.  I am from San Diego, California.  I'm working on getting my startup
+                        running.  It's called Stavely, and is a mobile app to help musicians notate and share
+                        music.  Check out our <a href="https://www.stavely.xyz">web page</a>!
+                    </p>
+                </div>
+                <div class="san-diego">
+                    <h3>San Diego, California</h3>
+                    <figure>
+                        <img id="ca-flag-img" src="images/ca-flag.webp" alt="California flag">
+                        <figcaption>Flag of the State of California</figcaption>
+                    </figure>
+                    <p>
+                        San Diego is in the southwest of California, right across the border from Tijuana, Mexico.
+                        The Pacific Ocean borders the city on the west, providing abundant beaches.  The military
+                        has a large presence, with major training facilities for both the Navy and Marines.  San Diego
+                        was the home of the Navy Top Gun pilot training that the movie was based on.  In fact,  lot of the
+                        movie was filmed in San Diego!
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+                    <li><a href="https://stackoverflow.com/questions/tagged/web">StackOverflow web tag<a></li>
+                    <li><a href="https://flexbox.malven.co/">FlexBox Cheatsheet</a></li>
+                    <li><a href="https://grid.malven.co/">Grid Cheatsheet</a></li>
+                    <li><a href="https://alialaa.github.io/css-grid-cheat-sheet/">Grid Layout Builder</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> - Randy Jones - California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
