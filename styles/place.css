@@ -54,6 +54,7 @@ table {
 td {
     font-family: var(--font);
     width: 50%;
+    vertical-align: top;
 }
 
 td.label {
@@ -101,13 +102,13 @@ footer p {
     }
 
     #data{
-       left: 15px;
+       left: 55px;
        top: 15px;
     }
 
     #weather {
-        right: 15px;
-        bottom: 15px;
+        right: 55px;
+        bottom: 115px;
     }
 
     #weather h2::after {
