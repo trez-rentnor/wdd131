@@ -38,7 +38,7 @@ article {
 
 article:last-of-type {
     border-bottom: none;
-    padding-bottom: none;
+    padding-bottom: 0;
 }
 
 h2 {
@@ -97,6 +97,7 @@ footer p {
        background-color: var(--white);
        color: var(--black);
        opacity: 0.7;
+       border: none;
     }
 
     #data{
