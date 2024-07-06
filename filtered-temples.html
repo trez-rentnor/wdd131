@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Temple Album</title>
+        <meta name="description" content="Temple Album">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Randy Jones">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <script src="scripts/filtered-temples.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <button id="menu" title="Menu"></button>
+            <nav class="navigation">
+                <a href="#" id="homeButton" title="Home">Home</a>
+                <a href="#" id="oldButton" title="Old">Old</a>
+                <a href="#" id="newButton" title="New">New</a>
+                <a href="#" id="largeButton" title="Large">Large</a>
+                <a href="#" id="smallButton" title="Small">Small</a>
+            </nav>
+        </header>
+        <main>
+            <h2 id="page-title">Home</h2>
+            <div id="gallery">
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> - Randy Jones - California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
