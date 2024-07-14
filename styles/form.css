@@ -1,0 +1,104 @@
+:root {
+    --rich-black: hsla(204, 86%, 6%, 1);
+    --onyx: hsla(230, 5%, 26%, 1);
+    --raisin-black: hsla(309, 8%, 17%, 1);
+    --paynes-gray: hsl(201, 11%, 70%);
+    --white: hsla(0, 0%, 99%, 1);
+}
+
+html {
+    font-family: 'Arsenal', sans-serif;
+}
+
+header,
+footer,
+main {
+    margin: .5rem;
+}
+
+header,
+footer {
+    background-color: var(--raisin-black);
+    color: var(--white);
+    padding: .2rem;
+    border: none;
+    text-align: center;
+}
+
+main {
+    background-color: var(--paynes-gray);
+    color: var(--raisin-black);
+    padding: 0.5rem;
+}
+
+label,
+legend {
+    display: block;
+    font-weight: bold;
+}
+
+label {
+    margin: 1rem 0 .5rem 0;
+}
+
+.checkbox_input label {
+    margin: 0;
+}
+
+fieldset {
+    margin: 1rem 0 0;
+    border: none;
+    padding: 1rem 0 1rem;
+}
+
+#rating {
+    padding: 0;
+}
+
+.radio_group {
+    display: flex;
+}
+
+.radio_input {
+    display: grid;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.radio_input label {
+    text-align: center;
+    margin: 0;
+}
+
+input[type="radio"] {
+    display: block;
+}
+
+#features {
+    padding: 0 0 .5rem 0;
+}
+
+select,
+input[type="date"],
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: .3rem 0;
+}
+
+.checkbox_input {
+    display: flex;
+    margin: .5rem 0;
+}
+
+input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+input[type="submit"] {
+    margin: 1rem 0;
+    padding: .5rem;
+    font-weight: bold;
+    width: 100%;
+    font-size: 18px;
+}

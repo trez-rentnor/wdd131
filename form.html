@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Review</title>
+        <meta name="description" content="Product Review form">
+        <meta name="author" content="Randy Jones">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <script src="scripts/form.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form method="get" action="review.html">
+                <label for="product">Product Name</label>
+                <select name="product" id="product">
+                    <option selected disabled>Select a product...</option>
+                </select>
+                <fieldset id="rating">
+                    <legend>Overall Rating</legend>
+                    <div class="radio_group">
+                        <div class="radio_input">
+                            <label for="one_star">&star;</label>
+                            <input type="radio" id="one_star" name="rating" value="one_star" required>
+                        </div>
+                        <div class="radio_input">
+                            <label for="two_star">&star;&star;</label>
+                            <input type="radio" id="two_star" name="rating" value="two_star" required>
+                        </div>
+                        <div class="radio_input">
+                            <label for="three_star">&star;&star;&star;</label>
+                            <input type="radio" id="three_star" name="rating" value="three_star" required>
+                        </div>
+                        <div class="radio_input">
+                            <label for="four_star">&star;&star;&star;&star;</label>
+                            <input type="radio" id="four_star" name="rating" value="four_star" required>
+                        </div>
+                        <div class="radio_input">
+                            <label for="five_star">&star;&star;&star;&star;&star;</label>
+                            <input type="radio" id="five_star" name="rating" value="five_star" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <label>Date of Installation</label>
+                <input type="date" name="date" id="date" required>
+                <fieldset id="features">
+                    <legend>
+                        Which features did you find useful in the product?
+                        <br>
+                        <i>(Check all that apply)</i>
+                    </legend>
+                    <div class="checkbox_input">
+                        <input type="checkbox" id="durability" name="durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div class="checkbox_input">
+                        <input type="checkbox" id="easeofuse" name="easeofuse">
+                        <label for="easeofuse">Ease Of Use</label>
+                    </div>
+                    <div class="checkbox_input">
+                        <input type="checkbox" id="performance" name="performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div class="checkbox_input">
+                        <input type="checkbox" id="design" name="design">
+                        <label for="design">Design</label>
+                    </div>
+                </fieldset>
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" />
+                <label for="username">User Name (Optional)</label>
+                <input type="text" id="username" name="username"></textarea>
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> - Randy Jones - California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
