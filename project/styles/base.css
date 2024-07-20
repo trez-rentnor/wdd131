@@ -257,3 +257,10 @@ footer span {
 #lastModified {
     font-size: small;
 }
+
+@media (max-width: 41rem) {
+    .panel#details,
+    .panel#info {
+        flex: 1 1 var(--left-column-width);
+    }
+}
