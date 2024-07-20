@@ -92,16 +92,11 @@ main {
     margin: .3rem 0;
 }
 
-#details input[type="date"] {
-    margin-left: 1rem;
-}
-
 #details input[type="text"] {
     margin-left: 1rem;
     width: 100%;
 }
 
-#details input[type="date"],
 #details input[type="submit"] {
     width: 100%;
 }
