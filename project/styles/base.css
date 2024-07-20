@@ -107,7 +107,7 @@ main {
 }
 
 .panel#details,
-.panel#actor {
+.panel#info {
     flex: 0 0 var(--left-column-width);
 }
 
@@ -195,7 +195,8 @@ div.actor-label p.role {
     font-size: 11pt;
 }
 
-#actor p.name,
+.actor-label p.name,
+#info p.name,
 #schedule-panel p.date {
     font-size: 15pt;
     font-weight: bold;
@@ -212,12 +213,31 @@ div.actor-label p.role {
     margin-bottom: 1rem;
 }
 
+.rehearsal-details {
+    max-width: 15rem;
+}
+
 .rehearsal input[type="submit"] {
     height: 2.5rem;
 }
 
-#actor p {
+#info p {
     margin: 0;
+}
+
+.panel .title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
+.panel .company {
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+
+.panel .director {
+    font-size: 14px;
 }
 
 footer {
