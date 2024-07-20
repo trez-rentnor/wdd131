@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edit Rehearsal</title>
+        <meta name="description" content="TheaterPlan - Schedule Rehearsal">
+        <meta name="author" content="Randy Jones">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+        <h1>Schedule Rehearsal</h1>
+        </header>
+        <main>
+            <div class="panel" id="details">
+                <form>
+                    <div class="input">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="input">
+                        <label for="start-time">Start Time</label>
+                        <input type="time" name="start-time" id="start-time" required>
+                    </div>
+                    <div class="input">
+                        <label for="end-time">End Time</label>
+                        <input type="time" name="end-time" id="end-time" required>
+                    </div>
+                    <div class="input">
+                        <label for="scene">Scene</label>
+                        <input type="text" name="scene" id="scene">
+                    </div>
+                    <h3>Full Cast - Click to Add</h3>
+                    <div class="scrollable" id="fullcast"></div>
+                    <div class="input">
+                        <input type="submit" value="Save Rehearsal" onclick="save_form()">
+                    </div>
+                </form>
+            </div>
+            <div class="panel" id="actors-panel">
+                <h2>Scheduled Cast - Click to Remove</h2>
+                <div id="actors"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> - Randy Jones - California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
