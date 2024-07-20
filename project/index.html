@@ -24,7 +24,7 @@
         </header>
         <main>
             <div class="panel" id="details">
-                <form>
+                <form onsubmit="save_form(event)">
                     <div class="input">
                         <label for="date">Date</label>
                         <input type="date" name="date" id="date" required>
@@ -44,7 +44,7 @@
                     <h3>Full Cast - Click to Add</h3>
                     <div class="scrollable" id="fullcast"></div>
                     <div class="input">
-                        <input type="submit" value="Save Rehearsal" onclick="save_form()">
+                        <input type="submit" value="Save Rehearsal">
                     </div>
                 </form>
             </div>

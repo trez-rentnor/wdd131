@@ -16,6 +16,7 @@
 
 html * {
     font-family: var(--default-font);
+    color: var(--drab-dark-brown);
 }
 
 body {
@@ -105,11 +106,13 @@ main {
     margin: .2rem;
 }
 
-.panel#details {
+.panel#details,
+.panel#actor {
     flex: 0 0 var(--left-column-width);
 }
 
-.panel#actors-panel {
+.panel#actors-panel,
+.panel#schedule-panel {
     flex: 1 0 var(--left-column-width);
 }
 
@@ -130,8 +133,8 @@ main {
     width: 100%;
 }
 
-#details input[type="submit"] {
-    padding: .5rem;
+input[type="submit"] {
+    padding: .5rem 1rem;
     border-color: var(--drab-dark-brown);
     background-color: var(--drab-dark-brown);
     color: var(--mindaro);
@@ -182,28 +185,52 @@ div.actor-large img {
     height: 90px;
     width: 75px;
 }
-div.actor-label p {
-    margin: 0;
-}
 
-div.actor-label p.name {
-    font-size: 15pt;
+div.actor-label p,
+#schedule-panel p {
+    margin: 0;
 }
 
 div.actor-label p.role {
     font-size: 11pt;
 }
 
+#actor p.name,
+#schedule-panel p.date {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#schedule-panel p {
+    font-size: 11pt;
+}
+
+.rehearsal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.rehearsal input[type="submit"] {
+    height: 2.5rem;
+}
+
+#actor p {
+    margin: 0;
+}
+
 footer {
     border-radius: 0 0 var(--border-radius) var(--border-radius);
     background-color: var(--drab-dark-brown);
-    color: var(--mindaro);
     text-align: center;
     margin: 0 0 1.5rem 0;
     padding: 1rem;
 }
 
-footer p {
+footer p,
+footer span {
+    color: var(--mindaro);
     margin: 0;
 }
 

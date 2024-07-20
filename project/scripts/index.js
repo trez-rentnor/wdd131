@@ -169,7 +169,9 @@ function populate_scheduled_actors(actors) {
 /**
  * Save form values to localStorage
  */
-function save_form() {
+function save_form(event) {
+    event.preventDefault();
+
     localStorage.setItem("date", document.getElementById("date").value);
     localStorage.setItem("start_time", document.getElementById("start-time").value);
     localStorage.setItem("end_time", document.getElementById("end-time").value);
