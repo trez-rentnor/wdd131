@@ -25,6 +25,35 @@ body {
     margin: auto;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+    background-color: var(--mindaro);
+}
+
+nav a {
+    font-family: var(--heading-font);
+	display: block;
+	color: var(--drab-dark-brown);
+	text-align: center;
+	padding: .3rem;
+	border-top: 3px solid rgba(255, 255, 255, 0);
+	border-bottom: 3px solid rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+nav a:hover {
+    transition: border-color 1s ease;
+	border-top: 3px solid;
+	border-bottom: 3px solid;
+}
+
+nav a:not(:hover) {
+    transition: border-color 0.5s ease;
+}
+
 h1, h2, h3 {
     font-family: var(--heading-font);
     text-align: center;
@@ -50,7 +79,7 @@ h3 {
     padding: 1rem 0 0 0;
 }
 
-main, footer {
+main, nav, footer {
     border: 2px solid var(--drab-dark-brown);
     padding: .5rem;
 }
